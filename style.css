@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
+.reset{
+	width: 100%;
+	border: none;
+	height: 40px;
+	margin-bottom: 20px;
+}
+body{
+	background-image: url('background.jpg');
+}
+.title{
+	font-family: 'Rock 3D', cursive;
+	text-align: center;
+	font-size: 100px;
+	font-weight: 400;
+	margin: 0 0 70px 0;
+	color: white;
+}
+.main-block{
+	width: 600px;
+	height: 600px;
+	border: 2px #ebebeb;
+	padding: 20px;
+	margin: auto;
+    box-shadow: 0px 0px 30px -12px;
+    border-radius: 15px;
+    background-color: white;
+
+}
+.line-hor-top{
+	position: absolute;
+	width: 130%;
+	height: 10px;
+	background-color: black;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.line-hor-between{
+	position: absolute;
+	width: 130%;
+	height: 10px;
+	background-color: black;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.line-hor-last{
+	position: absolute;
+	width: 130%;
+	height: 10px;
+	background-color: black;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.line-vertical-left{
+	position: absolute;
+    height: 330%;
+    width: 10px;
+    background-color: black;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-2069%, -20%);
+    display: none;
+}
+.line-vertical-right{
+	position: absolute;
+    height: 330%;
+    width: 10px;
+    background-color: black;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(1956%, -80%);
+    display: none;
+}
+.refresh{
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+	border-radius: 15px;
+	border: none;
+	cursor: pointer;
+	transition: all .5s;
+	font-weight: 800;
+	font-size: 22px;
+	pointer-events: none;
+	opacity: 0.5;
+}
+.linero{
+	border-radius: 15px;
+	background-color: #19bf98 !important;
+}
+.displeyed-refresh{
+	pointer-events: all;
+	opacity: 1;
+}
+.refresh:hover{
+	color: white;
+	background-color: grey;
+
+}
+.block{
+	width: 636px;
+	margin: auto;
+	margin-bottom: 20px;
+
+}
+.angle-line-left{
+	position: absolute;
+    height: 460%;
+    width: 10px;
+    background-color: black;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-3px, -266px) rotate(45deg);
+    display: none;
+}
+.angle-line-right{
+	position: absolute;
+    height: 460%;
+    width: 10px;
+    background-color: black;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-3px, -266px) rotate(-45deg);
+    display: none;
+}
+.line-vertical-betw{
+	position: absolute;
+    height: 330%;
+    width: 10px;
+    background-color: black;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.line-vertical-betw-block{
+display: block !important;
+}
+.angle-line-left-block{
+display: block !important;
+}
+.angle-line-right-block{
+display: block !important;
+}
+.line-vertical-left-block{
+display: block !important;
+}
+.line-vertical-right-block{
+display: block !important;
+}
+.line-hor-top-block{
+	display: block !important;
+}
+.line-hor-last-block{
+	display: block !important;
+}
+.line-hor-between-block{
+	display: block !important;
+}
+.first-main-block,.second-main-block,.third-main-block{
+	display: flex;
+	position: relative;
+
+}
+.first-block,.second-block,.third-block{
+	width: 200px;
+	height: 200px;
+	border: 1px solid;
+	cursor: pointer;
+	transition: all .5s;
+	position: relative;
+}
+.first-block:hover{
+	background-color: #ededed;
+}
+.second-block:hover{
+background-color: #ededed;
+}
+
+.third-block:hover{
+background-color: #ededed;
+}
+.tic-tac-img-x{
+	display: none;
+}
+.tic-tac-img-o{
+	display: none;
+}
+.tic-tac-img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+}
+.show-x{
+	display: block;
+}
+.show-o{
+	display: block;
+}
+.block-event{
+	pointer-events: none;
+}
