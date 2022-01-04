@@ -7,7 +7,30 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<p class="title" id="barev">Tic Tac Toe</p>
+	<div class="player-block">
+		<div class=" players player-x">
+			<p class="player-type">	<span  id="x-player-name">Player </span> plays with X</p>
+			<hr>
+			<div class="inputs-block">
+			<input id="x-player" class="name-input" type="text" placeholder="write your name">
+			<button class="apply-name" id="apply-x">OK</button>
+		</div>
+		</div>
+		<div class="total">
+			<button id="remove-users-btn" class="remove-players">Remove players</button>
+			<p class="total-count">
+				<span class="x-total" id="x-total">0</span>: <span class="o-total" id="o-total">0</span>
+			</p>
+		</div>
+		<div class=" players player-o">
+			<p class="player-type"><span  id="o-player-name">Player </span> plays with O</p>
+			<hr>
+			<div class="inputs-block">
+				<input id="o-player" class="name-input" type="text" placeholder="write your name">
+				<button class="apply-name" id="apply-o">OK</button>
+			</div>
+		</div>
+	</div>
 	<div class="block">
 	<button class="refresh" id="refresh">Refresh</button>
 	<div class="main-block">

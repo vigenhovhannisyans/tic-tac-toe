@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 .reset{
 	width: 100%;
 	border: none;
@@ -7,6 +9,105 @@
 }
 body{
 	background-image: url('background.jpg');
+}
+.total-count{
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	font-size: 45px;
+	font-family: 'Pushster', cursive;
+	justify-content: space-between;
+	margin-top: 7px;
+}
+.remove-players{
+	height: 34px;
+    background-color: #19bf98;
+    border: none;
+    border-radius: 9px;
+    color: white;
+	cursor: pointer;
+	border: 1px solid #19bf98;
+	transition: all .5s;
+}
+
+.total{
+	padding-top: 60px;
+}
+.player-block{
+	display: flex;
+	align-items: center;
+	margin: auto;
+	justify-content: center;
+	width: 100%;
+	height: 150px;
+	margin-bottom: 20px;
+	margin-top: 0;
+	background-color: #f1f1f1;
+	box-shadow: -3px 7px 14px -6px white;
+	position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+	min-height: 122px;
+}
+.player-type{
+	margin: 0;
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+	font-size: 35px;
+}
+.players{
+	background-color: #f1f1f1;
+	width: 600px;
+	height: max-content;
+	margin-right: 10px;
+	padding: 20px;
+}
+.apply-name{
+	height: 46px;
+    width: 65px;
+	font-family: 'Pushster', cursive;
+	font-size: 25px;
+	font-size: 25px;
+    background: #19bf98;
+    border: 1px solid #19bf98;
+    color: white;
+	border-radius: 0 15px 15px 0;
+	cursor: pointer;
+	transition: all .5s;
+}
+.apply-name:focus-visible{
+	outline: none;
+}
+.apply-name:focus{
+	outline: none;
+}
+.apply-name:hover{
+	background-color: #007459;
+	border: 1px solid #007459;
+}
+.remove-players:hover{
+	background-color: #007459;
+	border: 1px solid #007459;
+}
+.name-input:focus-visible{
+	outline: none;
+}
+.name-input:focus{
+	outline: none;
+}
+.inputs-block{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.name-input{
+	height: 40px;
+	width: 87%;
+	border-radius: 15px 0 0 15px;
+    border: 1px solid #19bf98;
 }
 .title{
 	font-family: 'Rock 3D', cursive;
@@ -22,7 +123,7 @@ body{
 	border: 2px #ebebeb;
 	padding: 20px;
 	margin: auto;
-    box-shadow: 0px 0px 30px -12px;
+    box-shadow: 0px 0px 30px -12px white;
     border-radius: 15px;
     background-color: white;
 
@@ -112,7 +213,7 @@ body{
 .block{
 	width: 636px;
 	margin: auto;
-	margin-bottom: 20px;
+	margin: 200px auto;
 
 }
 .angle-line-left{
