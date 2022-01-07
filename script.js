@@ -4,6 +4,7 @@ let xId = []
 let oId = []
 let xTotal=0
 let oTotal=0
+let dark = false;
 $(document).ready(()=>{
 	$('#refresh').click(()=>{
 		location.reload()
@@ -169,6 +170,40 @@ $(document).ready(()=>{
 	}else if(localStorage.getItem('o-total')){
 		$('#o-total').text(localStorage.getItem('o-total'))
 		$('#x-total').text('0')
+	}
+	let locDark = localStorage.getItem('theme')
+	console.log(typeof locDark);
+	if(locDark==='true'){
+		$('#html').addClass('dark-theme')
+		$('#dark-mode').text('Light mode')
+		$('body').addClass('body-background')
+		dark=true
+		return
+	}else{
+		$('body').removeClass('body-background')
+		$('#html').removeClass('dark-theme')
+		$('#dark-mode').text('Dark mode')
+		dark=false
+		return
+	}
+})
+
+$('#dark-mode').click(()=>{
+	if(!dark){
+		$('#html').addClass('dark-theme')
+		$('#dark-mode').text('Light mode')
+		$('body').addClass('body-background')
+		dark=true
+		localStorage.setItem('theme',dark)
+		return
+	}
+	if(dark){
+		$('#html').removeClass('dark-theme')
+		$('#dark-mode').text('Dark mode')
+		$('body').removeClass('body-background')
+		dark=false
+		localStorage.setItem('theme',dark)
+		return
 	}
 
 })

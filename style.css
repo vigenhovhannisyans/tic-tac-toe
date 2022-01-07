@@ -8,7 +8,7 @@
 	margin-bottom: 20px;
 }
 body{
-	background-image: url('background.jpg');
+	/* background-image: url('background.jpg'); */
 }
 .total-count{
 	display: flex;
@@ -18,6 +18,12 @@ body{
 	font-family: 'Pushster', cursive;
 	justify-content: space-between;
 	margin-top: 7px;
+}
+.dark-mode{
+	position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(28px, 23px);
 }
 .remove-players{
 	height: 34px;
@@ -109,6 +115,19 @@ body{
 	border-radius: 15px 0 0 15px;
     border: 1px solid #19bf98;
 }
+.dark-theme{
+	filter: invert(1);
+}
+.body-background{
+	background-color: #c7c7c7;
+}
+.theme{
+	width: 30px;
+	height: 30px;
+}
+.dark-mode{
+	
+}
 .title{
 	font-family: 'Rock 3D', cursive;
 	text-align: center;
@@ -123,7 +142,7 @@ body{
 	border: 2px #ebebeb;
 	padding: 20px;
 	margin: auto;
-    box-shadow: 0px 0px 30px -12px white;
+    box-shadow: 0px 0px 30px -12px black;
     border-radius: 15px;
     background-color: white;
 
